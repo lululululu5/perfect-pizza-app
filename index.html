@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Dough Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pizza Dough Calculator</h1>
+
+    <label for="pizza-count">Number of Pizzas:</label>
+    <input type="number" id="pizza-count" value="1" min="1">
+
+    <label for="water-percentage">Water Percentage:</label>
+    <input type="range" id="water-percentage" min="50" max="70" value="60">
+    <span id="water-output">60%</span>
+
+    <label for="salt-percentage">Salt Percentage:</label>
+    <input type="range" id="salt-percentage" min="1" max="5" value="3">
+    <span id="salt-output">3%</span>
+
+    <fieldset>
+        <legend>Yeast Type</legend>
+        <input type="radio" id="instant-yeast" name="yeast" value="instant" checked>
+        <label for="instant-yeast">Instant</label>
+
+        <input type="radio" id="active-dry-yeast" name="yeast" value="active-dry">
+        <label for="active-dry-yeast">Active Dry</label>
+
+        <input type="radio" id="fresh-yeast" name="yeast" value="fresh">
+        <label for="fresh-yeast">Fresh</label>
+    </fieldset>
+
+    <label for="rise-time">Rise Time (hours):</label>
+    <input type="range" id="rise-time" min="4" max="24" value="10">
+    <span id="rise-time-output">10h</span>
+
+    <label for="room-temp">Room Temperature (°C):</label>
+    <input type="range" id="room-temp" min="15" max="30" value="20">
+    <span id="room-temp-output">20°C</span>
+
+    <h2>Ingredients</h2>
+    <p id="result"></p>
+
+    <script src="src.js"></script>
+</body>
+</html>

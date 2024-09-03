@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"], input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: #888;
+}
+
+input[type="range"]:hover::-webkit-slider-runnable-track {
+    background: #bbb;
+}
